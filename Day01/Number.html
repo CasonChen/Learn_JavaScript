@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Number</title>
+    <script>
+        /*
+        在js中所有的数值都是Number类型
+            与python、C及Java不同，js包括整数和浮点数
+        */
+
+        var a = 123;
+        var b = 123.456;
+        var c = "123";
+        console.log(a);
+        console.log(b);
+        console.log(c);
+
+        // typeof运算符，可以检查一个变量的类型
+        // 语法：typeof 变量
+        console.log(typeof a);
+        console.log(typeof b);
+        console.log(typeof c);
+
+        // js中可以表示的数字的最大值
+        console.log(Number.MAX_VALUE);
+        // js中可以表示的数字的最小值，此最小值非最小值，是大于0的最小值
+        console.log(Number.MIN_VALUE);
+        // 如果使用Number表示的数字超过了最大值，则会返回一个Infinity
+        // Infinity表示正无穷，-Infinity表示负无穷
+
+        var m = "abc";
+        var n = "def";
+        var q = m * n;
+        console.log(q);
+        /*
+        此时，会返回NaN
+            NaN, Not A Number
+            但是用typeof检测，会发现还是一个Number
+        */
+
+        var z = 123 + 456;
+        console.log(z);
+        // js中整数的运算基本可以保证精确
+        var t = 0.0001 + 0.0002;
+        console.log(t);
+        // 此时会发现，使用js计算浮点数可能会得到一个不精确的结果
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>
